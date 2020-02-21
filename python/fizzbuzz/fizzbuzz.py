@@ -5,16 +5,12 @@ from numbers import Number
 
 def fizz(x):
   """
-    Checks to see if `x` is a multiple of 3
-    and returns True or False.
+    Checks to see if an input is numeric and a multiple of 3.
+    Returns 'fizz' if it is.
+    Returns the input if it is not.
   """
-  # check to make sure that x is numeric
-  if isinstance(x, Number):
-    # yes, it is a number. is it a multiple of 3?
-    if x % 3 == 0:
-      return 'fizz'
-    else:
-      return x
+  if isinstance(x, Number) and x % 3 == 0:
+    return 'fizz'
   else:
-    # no, it is NOT a number
+    # no, it is NOT a number, or not a multiple of 3
     return x

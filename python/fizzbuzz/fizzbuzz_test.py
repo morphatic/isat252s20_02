@@ -24,7 +24,11 @@ def describe_a_fizzbuzz_program_that():
       assert "missing 1 required positional argument" in str(exception_info.value)
 
     def returns_fizz_if_x_is_multiple_of_3():
-      """Checks to see if a number is a multiple of 3"""
+      """
+        Checks to see if an input is a multiple of 3.
+        Returns 'fizz' if it is.
+        Returns the input if it is not.
+      """
       assert fizz(3) == 'fizz'      # multiple of 3
       assert fizz(2) == 2           # non-multiple of 3
       assert fizz(0) == 'fizz'      # zero
