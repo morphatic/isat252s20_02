@@ -26,3 +26,17 @@ def fibu(x):
     Returns the input if it is not.
   """
   return 'FizzBuzz' if isinstance(x, Number) and x % 15 == 0 else x
+
+def play_fizzbuzz(start, end):
+  """
+    Generate the output for an actual FizzBuzz game
+    starting at `start` and ending at `end`.
+  """
+  # initialize the output to be an empty collection (array)
+  output = []
+  # loop through the numbers from start to end
+  for x in range(start, end + 1):
+    # append the appropriate transformation of x to the output array
+    output.append(buzz(fizz(fibu(x))))
+  # return the output array
+  return output
