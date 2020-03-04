@@ -4,7 +4,8 @@
   "description": "Example program to demonstrate TDD in JavaScript.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watch"
   },
   "author": "Morgan Benton <morgan.benton@gmail.com>",
   "license": "MIT",
